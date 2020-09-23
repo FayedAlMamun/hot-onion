@@ -1,0 +1,12 @@
+.margin{
+    margin: 50px 0 10px 0px;
+}
+.m{
+    margin-left:100px ;
+}
+.food-quantity{
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}

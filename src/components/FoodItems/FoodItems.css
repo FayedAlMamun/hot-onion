@@ -1,0 +1,25 @@
+.food-catagory{
+    color: black;
+}
+.food-catagory:hover{
+    text-decoration: none;
+    color: red;
+}
+.food-catagory:active,.food-catagory:focus{
+    border: none;
+    border-bottom: 3px solid red;
+    border-radius: 3px;
+}
+.item{
+    margin: 100px 0px 10px 300px !important;
+    padding: 0px !important;
+}
+.activeItem{
+    border: none;
+    border-bottom: 2px solid red;
+    margin: 10px;
+}
+.foodItem{
+    margin:10px
+   
+}

@@ -1,0 +1,32 @@
+.header-bg{
+    background-image: url(../../Image/bannerbackground.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    color: red;
+    vertical-align: middle;
+    height: 400px;
+  ;}
+    .pos{
+        color:red;
+    }
+    .btn{
+        border-radius: 20px !important;
+        position: relative;
+        right: 20px;
+    }
+    input{
+        width: 350px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        
+        
+    }
+    input::placeholder{
+        padding-left: 20px;
+    }
+    .header a{
+        text-decoration: none;
+        color: red;
+    }
