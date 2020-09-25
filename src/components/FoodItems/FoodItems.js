@@ -3,9 +3,11 @@ import './FoodItems.css'
 import FakeData from '../../FakeData/food'
 import { Link } from 'react-router-dom';
 import { userContext } from '../../App';
+
 const FoodItems = () => {
+    const [cart,setCart]=useContext(userContext)
     const [foodItem,setFoodItem]=useState('Lunch')
-    const [menu,setMenu]=useContext(userContext);
+    const [menu,setMenu]=useState([]);
     const handleBreakfast=()=>{
     const breakfastMenu=FakeData.filter(food=>food.catagory==='Breakfast');
     setMenu(breakfastMenu);
@@ -57,7 +59,7 @@ const FoodItems = () => {
         
            </div>
         <div className="text-center mb-5 mt-5">
-            <button className='btn btn-danger pl-4 pr-4'>Checkout YOur Food</button>
+           <Link to='/order'><button disabled={cart.length? false:true } className='btn btn-danger pl-4 pr-4'>Checkout YOur Food</button></Link>
         </div>
         </div>
     );

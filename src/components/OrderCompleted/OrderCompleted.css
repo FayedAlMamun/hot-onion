@@ -1,0 +1,13 @@
+.bg-gray{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.bg-white{
+    background-color: white;
+    border-radius: 10px;
+}
+.contact{
+    width: 190px;
+    border-radius: 10px;
+    padding: 5px;
+}

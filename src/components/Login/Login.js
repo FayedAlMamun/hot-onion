@@ -122,8 +122,9 @@ const Login = () => {
         });
     }
     return (
-        <div className='login'>
-        <div className='login-border'>
+        <div className='mt-5'>
+        <div className='d-flex justify-content-center'>
+        <div className='login-border '>
             {newUser ? <h3>Create an Account</h3> : <h3>Login</h3>}
             <form onSubmit={handleSubmit}>
                 {newUser && <input type="text" name="fname" onBlur={handleBlur} placeholder='First Name' required />}<br /><br />
@@ -135,14 +136,22 @@ const Login = () => {
             </form><br />
             {newUser ? <p>Already have an account? <span style={{ cursor: 'pointer' }} onClick={toggole}><u>Login</u></span></p> : <p>Don't have an account? <span style={{ cursor: 'pointer' }} onClick={toggole}><u>Create an account</u></span></p>}
         </div>
-        <div>
-    {!loggedInUser.success && <p style={{ color: 'red' }}>{loggedInUser.error}</p>}
-    {loggedInUser.success && <p style={{ color: 'green' }}>{loggedInUser.success}</p>}
-            <p style={{ marginLeft: '280px' }}>or</p>
-
-            <button className="btn-login" onClick={handleGoogleSignIn}>Continue with Google</button>
         </div>
-    <p>{loggedInUser.email}</p>
+        <div>
+   <div className="d-flex justify-content-center">
+   {!loggedInUser.success && <p style={{ color: 'red' }}>{loggedInUser.error}</p>}
+    {loggedInUser.success && <p style={{ color: 'green' }}>{loggedInUser.success}</p>}
+   </div>
+          
+        </div>
+        <div className="d-flex justify-content-center">
+        <p>----------or----------</p>
+        </div>
+        <div className="d-flex justify-content-center">
+        <button className="btn-login" onClick={handleGoogleSignIn}>Continue with Google</button>
+        </div>
+
+        
     </div>
     );
 };
