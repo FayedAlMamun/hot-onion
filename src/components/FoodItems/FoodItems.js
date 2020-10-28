@@ -42,7 +42,7 @@ const FoodItems = () => {
                 menu.map(item=>{
                     return([
                    <div className="col-12 col-sm-6 col-md-4 pl-5 ">
-                       <div style={{width:'15rem'}}>
+                       <div className='hoverEffect' style={{width:'15rem'}}>
                        <Link to={'/detail/'+item.id}><img className='card-img-top' src={item.item} alt=""/></Link>
                        <div>
                         <h5 className='mt-4  text-center'>{item.title}</h5>

@@ -51,14 +51,14 @@ const OrderPlaced = () => {
             <div className="row  ">
                 <div className="col-md-6 text-center mt-4">
                     <div>
-                        <form onSubmit={handleSumit} className=''>
+                        <form onSubmit={handleSumit}>
                             <input className='delivaryDetails' disabled value='Edit Delivary Details' placeholder='' type="text" /><br /><br />
                             <input onBlur={handleBlur} className='delivaryDetails' placeholder='Your City' type="text" required name='adress' /><br /><br />
                             <input onBlur={handleBlur} className='delivaryDetails' placeholder='Road no' type="text" required name='roadNo' /><br /><br />
                             <input className='delivaryDetails' placeholder='Falt,suite or floor' type="text" required /><br /><br />
                             <input className='delivaryDetails' placeholder='Business name' type="text" /><br /><br />
                             <input className='delivaryDetails' placeholder='Add deliver instructor' type="text" /><br /><br />
-                            <input className='delivaryDetails btn-danger' value='Save & Continue' type='submit' />
+                            <input className='delivaryDetails btn-sbmt'  value='Save & Continue' type='submit' />
                         </form>
                     </div>
                 </div>
